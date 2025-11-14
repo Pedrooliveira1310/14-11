@@ -1,0 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Faixa superior */
+.top-bar {
+  background: #f15a24;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Barra de pesquisa */
+.search-box {
+  flex: 1;
+  display: flex;
+  max-width: 600px;
+  margin: 0 20px;
+  border-bottom: 2px solid #f15a24;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-box button {
+  border: none;
+  background: none;
+  color: #f15a24;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Ações */
+.actions a {
+  margin-left: 20px;
+  color: #f15a24;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+/* Menu */
+.menu {
+  background: #f15a24;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 12px 0;
+  display: block;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- RESPONSIVIDADE --- */
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-box {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .actions {
+    display: flex;
+    gap: 15px;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu ul li a {
+    font-size: 0.9rem; /* diminui a fonte */
+    padding: 5px 10px;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 40px; /* diminui logo */
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 95%;
+    border-bottom: 2px solid #f15a24;
+  }
+
+  .actions {
+    flex-direction: row;
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .menu ul li a {
+    font-size: 0.8rem; /* fonte menor ainda */
+    padding: 4px 8px;
+  }
+}
