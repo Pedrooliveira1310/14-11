@@ -1,0 +1,221 @@
+body {
+  background-image: url('img/352d627e4c40280f4497d61e7c137f61b0a5a93b.png');
+  font-family: 'Lalezar', Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;           
+}
+
+.container {
+  background-color: rgba(93, 69, 188, 0.75);
+  border-radius: 40px;
+  padding: 40px;
+  width: 90%;
+  max-width: 950px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+  width: 180px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Logo no canto */
+.logo-container {
+  width: 130px;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  opacity: 1.0;
+}
+
+/* Título */
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0 0 5px;
+}
+
+/* Subtítulo */
+p {
+  color: rgba(243, 190, 10, 1);
+  margin: 0 0 30px;
+  font-size: 0.9rem;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+li {
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 5px 10px 5px 60px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 5px black;
+  font-size: 18px;
+  width: 45%;
+  margin-left: 200px;
+  height: 40px;
+}
+
+li h3 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  transition: 0.3s;
+  font-family: 'Lalezar', Arial, sans-serif;
+}
+
+li img {
+  position: absolute;
+  left: -30px;
+  width: 90px;
+  height: 120px;
+  top: -30px;
+  opacity: 1.0;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+li img:hover {
+  transform: scale(1.2);
+}
+
+/* Links */
+a:hover {
+  color: #5d45bc;
+  transition: 0.7s;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+/* Botão sair */
+.sair {
+  display: block;
+  margin: 30px auto 0;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  border-color: #f3be0a;
+}
+
+.sair:hover {
+  color: #f3be0a;
+}
+
+/* Imagem decorativa */
+.barra {
+  position: absolute;
+  right: -165px;
+  width: 500px;
+  height: 500px;
+  bottom: -100px;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 1024px) {
+  li {
+    width: 60%;
+    margin-left: 100px;
+  }
+}
+
+.logo{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  li {
+    width: 80%;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  li img {
+    width: 90px;
+    height: 90px;
+    top: -30px;
+    left: -20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  /* Remove a barra no tablet/celular */
+  .barra {
+    display: none;
+  }
+}
+
+.logo{
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  li {
+    width: 100%;
+    font-size: 14px;
+    padding-left: 50px;
+  }
+
+  li img {
+    width: 70px;
+    height: 70px;
+    top: -20px;
+    left: -15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .logo {
+    display: none;
+  }
+}

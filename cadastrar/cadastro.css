@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* container principal */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* lado esquerdo */
+.left {
+  flex: 1;
+  background: url('img/352d627e4c40280f4497d61e7c137f61b0a5a93b.png') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* caixa de login */
+.login-box {
+  position: relative;
+  width: 550px;
+  height: 600px;
+  background-color: rgba(93, 69, 188, 0.85);
+  border-radius: 40px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.login-box h1 {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.login-box input {
+  width: 70%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  height: 70px;
+}
+
+.login-box a {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-box button {
+  margin-top: 25px;
+  width: 40%;
+  padding: 12px;
+  background: #8C4C27;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #c16a38;
+}
+
+.imagem1 img {
+  width: 265px;
+  height: 310px;
+  position: absolute;
+  top: 360px;
+  left: 120px;
+}
+
+.imagem2 img {
+  width: 390px;
+  height: 520px;
+  position: absolute;
+  top: 201px;
+  left: -70px;
+}
+
+/* lado direito */
+.right {
+  flex: 1;
+  background: #ff4400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  body {
+    overflow: scroll;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .login-box {
+    width: 95%;
+    height: auto;
+  }
+
+  .imagem1 img {
+    width: 160px;
+    height: 220px;
+    position: absolute;
+    top: 195px;
+    left: 50px;
+  }
+
+  .imagem2 img {
+    width: 230px;
+    height: 320px;
+    position: absolute;
+    top: 120px;
+    left: -50px;
+  }
+
+  .login-box h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/352d627e4c40280f4497d61e7c137f61b0a5a93b.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo */
+.imag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Caixa principal do cadastro */
+.container {
+    position: relative; /* necessário para a logo se alinhar ao container */
+    margin-top: 80px;
+     background-color: rgba(62, 30, 18, 0.9); /* 0.9 = 90% opaco */
+    width: 800px;
+    padding: 40px 30px 30px 30px; /* espaço extra no topo para não sobrepor a logo */
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+
+/* Título */
+.container h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Subtítulos (Usuário, Senha, Telefone) */
+.container h2 {
+    font-size: 16px;
+    color: #F2C029;
+    margin: 10px 0 5px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+/* Inputs */
+input[type="text"], 
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Botão */
+.entrar input {
+    width: 200px;
+    padding: 10px;
+    background-color: #854D24;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.entrar input:hover {
+    background-color: #32150E;
+    color: #F2C029;
+    border: 1px solid #854D24;
+}
+
+/* Listagem */
+
+/* Título da listagem */
+.fornecedor h1 {
+    font-size: 22px;
+    color: #fff;
+    background-color: rgb(132, 76, 36, 0.8);
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 5px; 
+}
+
+/* Container da tabela */
+.fornecedor .card-list {
+    background-color: rgba(62, 30, 18, 0.9); /* Fundo escuro semi-transparente */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 5px ;
+    width: 95%;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    
+    
+}
+
+.fornecedor-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; /* Texto branco */
+}
+
+.fornecedor-table thead th {
+    background-color: #854D24; /* Cor da marca */
+    color: #F2C029; /* Destaque dourado */
+    padding: 10px;
+    text-align: left;
+}
+
+.fornecedor-table tbody td {
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo transparente leve */
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Borda arredondada última linha */
+.fornecedor-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+.fornecedor-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+/* Botões */
+.btn.edit {
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 8px;
+    padding: 6px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn.edit:hover {
+    background-color: #1e7e34;
+}
+
+.btn.del {
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 8px;
+    padding: 6px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn.del:hover {
+    background-color: #a71d2a;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+        align-items: stretch;
+    }
+
+    /* Logo */
+    .imag {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    /* Formulário */
+    .container {
+        width: 95%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .container h2 {
+        font-size: 14px;
+        margin-left: 20;
+        
+    }
+
+    input [type="text"],
+    input [type="password"] {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .entrar input {
+        width: 100%;
+    }
+
+    /* Listagem */
+
+    .fornecedor h1 {
+        font-size: 20px;
+    }
+
+    .fornecedor-table {
+        font-size: 12px;
+    }
+
+    .fornecedor-table thead th,
+    .fornecedor-table tbody td {
+        padding: 6px;
+        
+    }
+
+    .btn {
+        font-size: 11px;
+        padding: 4px 6px;
+        margin-right: 2px;
+    }
+}
