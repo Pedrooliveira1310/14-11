@@ -1,0 +1,96 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    background: #f0f0f0;
+    padding: 40px 0;
+    background: url(img/WhatsApp\ Image\ 2025-09-12\ at\ 08.36.10.jpeg);
+}
+
+/* ===== CONTAINER CARD ===== */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(62, 30, 18, 0.9);
+    padding: 40px;
+    border-radius: 20px;          /* igual ao anterior */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    color: #F2C029;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #F2C029;
+}
+
+/* ===== LABELS ===== */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #F2C029;
+}
+
+/* ===== INPUTS ===== */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #fafafa;
+    
+}
+
+/* ===== INPUT FILE ===== */
+input[type="file"] {
+    padding: 8px;
+}
+
+/* ===== BOTÃO ===== */
+button,
+.btn {
+    width: 100%;
+    color: #F2C029;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover,
+.btn:hover {
+    color: #F2C029;;
+}
+
+/* ===== LINK VOLTAR ===== */
+a.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #F2C029;
+}
+
+a.voltar:hover {
+    color: #222;
+}
